@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="com.led.led.ledControl"
+    android:background="#3fcfab"
+    android:alwaysDrawnWithCache="false"
+    android:contextClickable="true"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:forceHasOverlappingRendering="true">
+
+    <Button
+        android:text="Send Vital Signs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:onClick="sendvalues"
+        android:background="#546354"
+        android:textColor="#f7f4f4"
+
+        android:layout_above="@+id/button4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Readings"
+        android:id="@+id/button2"
+        android:background="#546354"
+        android:textColor="#f7f4f4"
+
+        android:shadowColor="#4820e6"
+
+
+        android:checked="false"
+        android:layout_marginTop="30dp"
+        android:backgroundTintMode="multiply"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:allowUndo="false"
+        android:layout_below="@+id/outputTexttt"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:id="@+id/button4"
+
+        android:background="#546354"
+        android:textColor="#f7f4f4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/outputText"
+
+        android:textSize="40sp"
+        android:text="0"
+        android:textColor="#f9f2f2"
+        android:textStyle="bold|italic"
+        android:shadowColor="#ffffff"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/outputTextt"
+
+        android:textSize="40sp"
+        android:text="0"
+        android:textColor="#f9f2f2"
+        android:textStyle="bold|italic"
+        android:shadowColor="#ffffff"
+        android:layout_below="@+id/outputText"
+        android:layout_alignLeft="@+id/outputText"
+        android:layout_alignStart="@+id/outputText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Beats/min"
+        android:id="@+id/textView2"
+        android:textColor="#fefbfb"
+        android:layout_alignBaseline="@+id/outputTextt"
+        android:layout_alignBottom="@+id/outputTextt"
+        android:layout_toRightOf="@+id/outputText"
+        android:layout_toEndOf="@+id/outputText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press the button below"
+        android:id="@+id/outputTexttt"
+        android:textColor="#f9f5f5"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Resp/min"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/outputText"
+        android:layout_alignBottom="@+id/outputText"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:textColor="#fefefa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Celsius"
+        android:id="@+id/textView4"
+        android:textColor="#fefbfb"
+        android:layout_alignBaseline="@+id/outputTextttt"
+        android:layout_alignBottom="@+id/outputTextttt"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/outputTextttt"
+
+        android:textSize="40sp"
+        android:text="0"
+        android:textColor="#f9f2f2"
+        android:textStyle="bold|italic"
+        android:shadowColor="#ffffff"
+        android:layout_below="@+id/outputTextt"
+        android:layout_alignLeft="@+id/outputTextt"
+        android:layout_alignStart="@+id/outputTextt" />
+
+</RelativeLayout>
